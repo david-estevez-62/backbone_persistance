@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Since input will be saved to local storage it is not sent to backend so therefore the action attribute will not be used -->
+    <form method="post" action="/players" id="formAdd" >
+      <input type="text" name="username" placeholder="Username" id="inputPlayer" />
+      <input type="submit" value="Submit" />
+    </form>
+
+
+    <ul id="group-wrapper"></ul>
+{% endblock %}

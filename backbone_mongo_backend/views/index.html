@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <form method="post" action="/players" id="formAdd" >
+      <input type="text" name="username" placeholder="Username" id="inputPlayer" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <ul id="group-wrapper"></ul>
+    <!-- <ul id="group-wrapper">{% for ind in inds %}<li>{{ind.username}}</li>{% endfor %}</ul> -->
+{% endblock %}
